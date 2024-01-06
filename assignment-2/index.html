@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intergalactic Travel Application</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <form action="#" method="post">
+
+        <h2>Intergalactic Travel Application</h2>
+        <section>
+            <h3>Personal Information</h3>
+            <hr>
+            <div class="two-column s-screen">
+                <div class="inner">
+                    <label for="fullName">Full Name : </label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="inner">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="two-column s-screen">
+                <div class="">
+                    <label for="emergencyContact">Emergency Contact : </label>
+                    <input type="text" id="emergencyContact" name="emergencyContact" required>
+                </div>
+                <div class="">
+                    <label for="age">Age : </label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+            </div>
+            <div class="two-column s-screen">
+                <div class="">
+                    <label for="birthdate">Birthdate : </label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                <div class="">
+                    <label for="spacesuitColor">Preferred Spacesuit Color : </label>
+                    <input type="color" id="spacesuitColor" name="spacesuitColor" required>
+                </div>
+            </div>
+        </section>
+        <section>
+
+            <h3>Preferences</h3>
+            <hr>
+            <div class="">
+                <div class="">
+                    <label>Desired Planets and Galaxies to Visit :</label>
+                    <div class=" two-column justify-left">
+                        <label class="two-column justify-left" for="planet1">
+                <input type="checkbox" id="planet1" name="planets" value="Planet 1">Planet 1
+                </label>
+                        <label class="two-column justify-left" for="planet2">
+                <input type="checkbox" id="planet2" name="planets" value="Planet 2">
+                Planet 2
+                </label>
+                    </div>
+                </div>
+                <div class="">
+                    <label>Cabin Class :</label>
+                    <div class=" two-column justify-left">
+                        <label class="two-column justify-left" for="economy">          
+                  <input type="radio" id="economy" name="cabinClass" value="Economy">
+                Economy</label>
+                        <label class="two-column justify-left" for="business">     
+                       <input type="radio" id="business" name="cabinClass" value="Business">
+                Business</label>
+                        <label class="two-column justify-left" for="galacticSuite">       
+                     <input type="radio" id="galacticSuite" name="cabinClass" value="Galactic Suite">
+                Galactic Suite</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <label for="gravityLevel">Desired Gravity Level :</label>
+                <input type="range" id="gravityLevel" name="gravityLevel" min="0" max="10" step="1">
+            </div>
+            <div class="">
+
+                <label for="preferredMeals">Preferred Meals :</label>
+                <select id="preferredMeals" name="preferredMeals">
+                        <option value="earthCuisine">Earth Cuisine</option>
+                        <option value="martianDelights">Martian Delights</option>
+                        <option value="asteroidSnacks">Asteroid Snacks</option>
+                    </select>
+            </div>
+        </section>
+        <section>
+            <h3>Important</h3>
+            <hr>
+            <label>Known Space Allergies :</label>
+            <div class="two-column justify-left">
+                <label class="two-column" for="moonDust">
+                    <input type="checkbox" id="moonDust" name="spaceAllergies[]" value="Moon Dust">
+                    Moon Dust
+                </label>
+                <label class="two-column" for="solarFlares">
+                    <input type="checkbox" id="solarFlares" name="spaceAllergies[]" value="Solar Flares"> 
+                    Solar Flares
+                </label>
+            </div>
+            <div class="mt-2">
+                <label for="passportUpload">Upload Passport or Intergalactic ID :</label>
+                <input type="file" id="passportUpload" name="passportUpload" accept=".pdf, .jpg, .png" required>
+            </div>
+            <div class="">
+                <label for="medicalRequirements">Special Medical Requirements :</label>
+                <textarea id="medicalRequirements" name="medicalRequirements" rows="4"></textarea>
+            </div>
+            <label class="mt-2">Legal Agreements and Consents :</label>
+            <div class="two-column justify-left">
+                <label class="two-column">
+                    <input type="checkbox" id="riskConsent" name="legalAgreements[]" value="Risk Consent">
+                    Risk Consent
+                </label>
+
+                <label class="two-column">
+                    <input type="checkbox" id="spaceSicknessWaiver" name="legalAgreements[]" value="Space Sickness Waiver">
+                    Space Sickness Waiver
+                </label>
+            </div>
+            <div class="mt-2">
+                <label for="signature">Signature :</label>
+                <input type="text" id="signature" name="signature" required>
+            </div>
+            <div class="">
+                <label for="additionalRequests">Additional Requests and Comments :</label>
+                <textarea id="additionalRequests" name="additionalRequests" rows="4"></textarea>
+            </div>
+        </section>
+
+        <div class="button-div">
+            <button type="submit">Submit Application</button>
+        </div>
+
+    </form>
+
+    <footer>
+        <h3> <span>&copy</span> All Rights Reserved | <span>Nasir's</span> </h3>
+    </footer>
+
+</body>
+
+</html>

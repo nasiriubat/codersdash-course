@@ -1,0 +1,264 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #051622;
+    /* Space-themed background color */
+    color: #ffffff;
+    /* Text color */
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+section h3 {
+    text-transform: uppercase;
+}
+
+section hr {
+    margin-bottom: 2rem;
+}
+
+section h4 {
+    /* text-align: center; */
+}
+
+form {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #172c3a;
+    /* Form background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 4rem;
+    color: #41d3bd;
+    /* Header color */
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #ffffff;
+    /* Label text color */
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #6188a8;
+    /* Input border color */
+    border-radius: 5px;
+    background-color: #12232e;
+    /* Input background color */
+    color: #ffffff;
+    /* Input text color */
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #41d3bd;
+    /* Border color on hover */
+}
+
+button {
+    background-color: #41d3bd;
+    /* Button background color */
+    color: #ffffff;
+    /* Button text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* display: inline-block; */
+    font-size: 1.2rem;
+    /* margin: 0 auto !important; */
+}
+
+.button-div {
+    margin: 0rem;
+    text-align: right;
+}
+
+button:hover {
+    background-color: #1e5372;
+    /* Button background color on hover */
+}
+
+.two-column {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.two-column div {
+    width: 98%;
+}
+
+
+/* Custom styling for checkboxes and radio buttons */
+
+input[type="checkbox"],
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border: 2px solid #41d3bd;
+    /* Border color */
+    border-radius: 3px;
+    background-color: #12232e;
+    /* Background color */
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    background-color: #41d3bd;
+    /* Background color when checked */
+    border: 2px solid #1e5372;
+    /* Border color when checked */
+}
+
+input[type="color"] {
+    height: 2.4rem;
+}
+
+
+/* Additional styling for checkbox grid */
+
+.checkbox-grid label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.checkbox-grid input {
+    margin-right: 5px;
+}
+
+
+/* Legal Agreements and Consents Section */
+
+.label-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label-checkbox input {
+    margin-right: 5px;
+}
+
+
+/* Signature field styling */
+
+#signature {
+    border: 2px solid #41d3bd;
+    /* Border color */
+    border-radius: 5px;
+    background-color: #12232e;
+    /* Background color */
+    color: #ffffff;
+    /* Text color */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/* File input styling */
+
+input[type="file"] {
+    background-color: #12232e;
+    /* Background color */
+    color: #ffffff;
+    /* Text color */
+    padding: 10px;
+    border: 2px solid #41d3bd;
+    /* Border color */
+    border-radius: 5px;
+}
+
+
+/* Textarea styling */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* Hover effect for file input */
+
+input[type="file"]:hover {
+    border-color: #1e5372;
+    /* Border color on hover */
+}
+
+
+/* Hover effect for checkboxes and radio buttons */
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+    border-color: #1e5372;
+    /* Border color on hover */
+}
+
+footer {
+    max-width: 800px;
+    margin: 0px auto;
+    background-color: #172c3a;
+    /* Form background color */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+footer h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer h3 span {
+    color: #e4f73b;
+}
+
+.mt-2 {
+    margin-top: 2rem
+}
+
+.column {
+    flex-direction: column;
+    /* justify-content: left; */
+}
+
+.justify-left {
+    justify-content: left;
+}
+
+label:not(:has(input)) {
+    color: rgb(145, 229, 235);
+}
+
+@media screen and (max-width: 498px) {
+    /* .two-column div {
+        flex-direction: column;
+    } */
+    .s-screen {
+        flex-direction: column;
+        ;
+    }
+}
